@@ -5,45 +5,50 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
   <title>Document</title>
 </head>
 
 <body>
-  <h1>Featured resources</h1>
-  <section>
-    <a href="">
+  <section class="container">
+  <h1 class="container__title">Featured resources</h1>
+   <section class="card-container">
+    <div class="card" >
       <article><img src="https://sysdig.com/wp-content/uploads/card.png" alt="">
-        <h2>Live Webinar</h2>
+        <h2 class="card__title">Live Webinar</h2>
         <p>Cloud Attacks Are Here: Threat Actors Like Containers Too!</p>
-        <p>Nov 17, 2022 10am Pacific | 1pm Eastern
+        <p class="card_pharagraph">Nov 17, 2022 10am Pacific | 1pm Eastern
           Register Now
         </p>
       </article>
-    </a>
-    <a href="">
-      <article><img src="https://sysdig.com/wp-content/uploads/card.png" alt="">
-        <h2>Blog</h2>
-        <p>Eliminate noise and prioritize the vulnerabilities that really matter with Risk Spotlight
-          Read the Blog
-        </p>
+    </div>
+    <div class="card" >
+      <article>
+        <img src="https://sysdig.com/wp-content/uploads/card.png" alt="">
+        <h2 class="card__title">Blog</h2>
+        <p class="card_pharagraph">Eliminate noise and prioritize the vulnerabilities that really matter with Risk Spotlight
+          Read the Blog</p>
       </article>
-    </a><a href="">
-      <article><img src="https://sysdig.com/wp-content/uploads/card.png" alt="">
-        <h2>Brief</h2>
-        <p>Sysdig Awarded Container Security Company of the Year
-          Read the Brief
-        </p>
+    </div>
+    <div class="card" >
+      <article>
+        <img src="https://sysdig.com/wp-content/uploads/card.png" alt="">
+        <h2 class="card__title">Brief</h2>
+        <p class="card_pharagraph">Sysdig Awarded Container Security Company of the Year
+          Read the Brief</p>
       </article>
-    </a><a href="">
-      <article><img src="https://sysdig.com/wp-content/uploads/card.png" alt="">
-        <h2>Report</h2>
-        <p>2022 Cloud-Native Security and Usage Report
-          Learn More
-        </p>
+    </div>
+    <div class="card" >
+      <article>
+        <img src="https://sysdig.com/wp-content/uploads/card.png" alt="">
+        <h2 class="card__title">Report</h2>
+        <p class="card_pharagraph">2022 Cloud-Native Security and Usage Report
+          Learn More</p>
       </article>
-    </a>
+    </div>
   </section>
-  <a href="#">VIEW ALL RESOURCES</a>
+  <a class="button" href="#">VIEW ALL RESOURCES</a>
+  </section>
 </body>
 
 </html>
