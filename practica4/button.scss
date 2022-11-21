@@ -1,0 +1,15 @@
+.button {
+    background-color: #ffe24d;
+    padding: .9375rem 1.25rem .9375rem 1.25rem;
+    margin-top: 1.25rem;
+    color: #303030;
+    text-decoration: none;
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: .75rem;
+    font-weight: bold;
+    transition: background-color 50s;
+}
+
+.button:hover {
+    background: linear-gradient(90deg,#ffe24d 11.03%,#99cc7e 53.39%,#93e0f1 103.45%);
+}
