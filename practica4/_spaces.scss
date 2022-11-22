@@ -1,0 +1,105 @@
+body {
+  background-color: whitesmoke;
+}
+
+.container {
+  width: 75rem;
+  margin: 0 auto;
+  text-align: center;
+  background-color: whitesmoke;
+
+  .card-container {
+    display: flex;
+    gap: 1.25rem;
+    width: 62.5rem;
+    margin: 0 auto;
+    margin-bottom: 3.75rem;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+  
+    .card-gradient {
+      position: relative;
+      text-decoration: none;
+      background-color: white;
+      border-radius: .625rem;
+      transition: background-color 1s;
+      width: 15.625rem;
+      height: 25rem;
+      border-radius: .625rem;
+    }
+  
+    .card-gradient:hover {
+      background-color: (#ffe24d);
+    }
+  
+    .card--webinar:hover::after {
+      content: "Register Now";
+      display: inline-block;
+      position: absolute;
+      font-size: .9375rem;
+      font-family: 'Libre Franklin', sans-serif;
+      font-weight: bold;
+      color: black;
+      bottom: 15px;
+      right: 115px;
+    }
+
+    .card--blog:hover::after {
+      content: "Read the Blog";
+      display: inline-block;
+      position: absolute;
+      font-size: .9375rem;
+      font-family: 'Libre Franklin', sans-serif;
+      font-weight: bold;
+      color: black;
+      bottom: 15px;
+      right: 115px;
+    }
+
+    .card--brief:hover::after {
+      content: "Read the Brief";
+      display: inline-block;
+      position: absolute;
+      font-size: .9375rem;
+      font-family: 'Libre Franklin', sans-serif;
+      font-weight: bold;
+      color: black;
+      bottom: 15px;
+      right: 115px;
+    }
+
+    .card--report:hover::after {
+      content: "Learn More";
+      display: inline-block;
+      position: absolute;
+      font-size: .9375rem;
+      font-family: 'Libre Franklin', sans-serif;
+      font-weight: bold;
+      color: black;
+      bottom: 15px;
+      right: 115px;
+    }
+  
+    .card-arrow:hover::before {
+      display: inline-block;
+      content: url(("data:image/svg+xml;charset=utf-8,%3Csvg width='13' height='12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12.53 6.53a.75.75 0 0 0 0-1.06L7.757.697a.75.75 0 1 0-1.06 1.06L10.939 6l-4.242 4.243a.75.75 0 0 0 1.06 1.06L12.53 6.53ZM0 6.75h12v-1.5H0v1.5Z' fill='%23171717'/%3E%3C/svg%3E"));
+      position: absolute;
+      color: #303030;
+      bottom: 13px;
+      right: 80px;
+    }
+  }
+}
+
+
+.card img {
+  width: 15.625rem;
+  border-radius: 10px 10px 0 0;
+}
+
+.card--text {
+  padding: 10px 20px 5px ;
+}
+
+
