@@ -26,7 +26,7 @@
   margin-bottom: 0.625rem;
 }
 
-.card_pharagraph {
+.card__pharagraph {
   font-size: 0.8125rem;
   font-family: "Work Sans", sans-serif;
   color: #303030;
@@ -46,8 +46,7 @@ body {
   text-align: center;
   background-color: whitesmoke;
 }
-
-.card-container {
+.container .card-container {
   display: flex;
   gap: 1.25rem;
   width: 62.5rem;
@@ -57,38 +56,75 @@ body {
   overscroll-behavior-x: contain;
   scroll-snap-type: x proximity;
 }
-
-.card img {
-  width: 15.625rem;
-  border-radius: 10px 10px 0 0;
-}
-
-.card {
-  width: 15.625rem;
-  height: 25rem;
-  border-radius: 0.625rem;
-}
-
-.card--gradient {
+.container .card-container .card-gradient {
+  position: relative;
   text-decoration: none;
   background-color: white;
   border-radius: 0.625rem;
   transition: background-color 1s;
+  width: 15.625rem;
+  height: 25rem;
+  border-radius: 0.625rem;
 }
-
-.card--gradient:hover {
+.container .card-container .card-gradient:hover {
   background-color: #ffe24d;
 }
-
-.card--gradient:hover::after {
-  content: "Read More";
+.container .card-container .card--webinar:hover::after {
+  content: "Register Now";
+  display: inline-block;
+  position: absolute;
   font-size: 0.9375rem;
   font-family: "Libre Franklin", sans-serif;
   font-weight: bold;
+  color: black;
+  bottom: 15px;
+  right: 115px;
+}
+.container .card-container .card--blog:hover::after {
+  content: "Read the Blog";
+  display: inline-block;
+  position: absolute;
+  font-size: 0.9375rem;
+  font-family: "Libre Franklin", sans-serif;
+  font-weight: bold;
+  color: black;
+  bottom: 15px;
+  right: 115px;
+}
+.container .card-container .card--brief:hover::after {
+  content: "Read the Brief";
+  display: inline-block;
+  position: absolute;
+  font-size: 0.9375rem;
+  font-family: "Libre Franklin", sans-serif;
+  font-weight: bold;
+  color: black;
+  bottom: 15px;
+  right: 115px;
+}
+.container .card-container .card--report:hover::after {
+  content: "Learn More";
+  display: inline-block;
+  position: absolute;
+  font-size: 0.9375rem;
+  font-family: "Libre Franklin", sans-serif;
+  font-weight: bold;
+  color: black;
+  bottom: 15px;
+  right: 115px;
+}
+.container .card-container .card-arrow:hover::before {
+  display: inline-block;
+  content: url("data:image/svg+xml;charset=utf-8,%3Csvg width='13' height='12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12.53 6.53a.75.75 0 0 0 0-1.06L7.757.697a.75.75 0 1 0-1.06 1.06L10.939 6l-4.242 4.243a.75.75 0 0 0 1.06 1.06L12.53 6.53ZM0 6.75h12v-1.5H0v1.5Z' fill='%23171717'/%3E%3C/svg%3E");
+  position: absolute;
   color: #303030;
-  position: relative;
-  bottom: 1.25rem;
-  right: 4.0625rem;
+  bottom: 13px;
+  right: 80px;
+}
+
+.card img {
+  width: 15.625rem;
+  border-radius: 10px 10px 0 0;
 }
 
 .card--text {
